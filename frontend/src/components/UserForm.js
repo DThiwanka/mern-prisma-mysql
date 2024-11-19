@@ -46,22 +46,9 @@ const UserForm = ({ onCreate, editingUser, onUpdate, users }) => {
         style={{ padding: '10px', width: '100%', marginBottom: '10px' }}
         required
       />
-      
-      {/* UserID Dropdown */}
-      {/* <select
-        value={userId}
-        onChange={(e) => setUserId(e.target.value)}
-        style={{ padding: '10px', width: '100%', marginBottom: '10px' }}
-        required
-      >
-        <option value="">Select User</option>
-        {users.map((user) => (
-          <option key={user.id} value={user.id}>{user.name}</option>
-        ))}
-      </select> */}
 
       <button type="submit" style={{ padding: '10px 20px', backgroundColor: '#3498db', color: '#fff', border: 'none', cursor: 'pointer' }}>
-        {editingUser ? 'Update User' : 'Create User'}
+        {editingUser ? 'Update' : 'Create'}
       </button>
     </form>
   );

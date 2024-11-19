@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/posts'; // Adjust based on your backend API URL
+const API_URL = 'http://localhost:5000/api/posts'; 
 
 // Fetch all posts with search
 export const getAllPosts = async (search = '') => {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaEdit, FaTrash, FaSearch } from 'react-icons/fa';
-import { getAllUsers, createUser, updateUser, deleteUser } from '../services/userService';
+import { getAllUsers, deleteUser } from '../services/userService';
 import UserForm from './UserForm';
 
 const Users = () => {
@@ -40,7 +40,7 @@ const Users = () => {
 
   return (
     <div style={{ padding: '20px', maxWidth: '800px', margin: 'auto' }}>
-      <h2 style={{ textAlign: 'center' }}>Users Management</h2>
+      <h2 style={{ textAlign: 'center' }}>User Management System</h2>
       <div style={{ display: 'flex', marginBottom: '20px' }}>
         <input
           type="text"

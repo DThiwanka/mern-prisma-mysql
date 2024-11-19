@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Users from './components/Users';
 import Posts from './components/Posts';
+import Network from './components/Network';
 
 function App() {
   return (
@@ -10,11 +11,13 @@ function App() {
         <nav style={styles.nav}>
           <Link to="/users" style={styles.navLink}>Users</Link>
           <Link to="/posts" style={styles.navLink}>Posts</Link>
+          <Link to="/networks" style={styles.navLink}>Network</Link>
         </nav>
         <div style={styles.content}>
           <Routes>
             <Route path="/users" element={<Users />} />
             <Route path="/posts" element={<Posts />} />
+            <Route path="/networks" element={<Network />} />
           </Routes>
         </div>
       </div>
